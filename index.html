@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#180d24">
+  <title>✧ Alfea ✧</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="assets/Butterfly.png">
+</head>
+<body>
+  <div class="background"></div>
+  <div class="background-shade"></div>
+  <div class="stars" aria-hidden="true"></div>
+
+  <main class="shell">
+    <section class="page-side" aria-label="Navegação do reino">
+      <div class="page-frame-wrap">
+        <img class="page-frame" src="assets/page-frame.png" alt="Moldura vertical das páginas">
+
+        <!--
+          NAVEGAÇÃO FIXA NO HTML
+          Os textos, ícones e botões ficam diretamente aqui para facilitar futuras edições.
+          O JavaScript não cria nem altera o conteúdo destes botões.
+        -->
+        <nav id="nav" class="page-frame-content" aria-label="Páginas do reino">
+          <a href="" class="nav"><button data-id="guia" type="button">
+            <span class="nav-icon" aria-hidden="true"><img src="assets/guia-icon.png" alt=""></span>
+            <span class="nav-label">Guia</span>
+          </button></a>
+
+          <a href="" class="nav"><button data-id="transformacoes" type="button">
+            <span class="nav-icon" aria-hidden="true"><img src="assets/transformacoes-icon.png" alt=""></span>
+            <span class="nav-label">Transformações</span>
+          </button></a>
+
+          <a href="" class="nav"><button data-id="elementos" type="button">
+            <span class="nav-icon" aria-hidden="true"><img src="assets/Elementos.png" alt=""></span>
+            <span class="nav-label">Elementos</span>
+          </button></a>
+
+          <a href="" class="nav"><button data-id="pixies" type="button">
+            <span class="nav-icon" aria-hidden="true"><img src="assets/Pixies.png" alt=""></span>
+            <span class="nav-label">Pixies</span>
+          </button></a>
+
+          <a href="" class="nav"><button data-id="mercado" type="button">
+            <span class="nav-icon" aria-hidden="true"><img src="assets/Mercado.png" alt=""></span>
+            <span class="nav-label">Mercado</span>
+          </button></a>
+
+          <a href="" class="nav"><button data-id="formulario" type="button">
+            <span class="nav-icon" aria-hidden="true"><img src="assets/Formulário.png" alt=""></span>
+            <span class="nav-label">Formulário</span>
+          </button></a>
+        </nav>
+      </div>
+    </section>
+
+    <section class="stage">
+      <div class="floating-center-icon" aria-hidden="true">
+        <a href=""><img src="assets/floating-icon.png" alt=""></a>
+      </div>
+
+      <div class="frame-wrap">
+        <img class="frame" src="assets/frame.png" alt="Moldura ornamental central">
+        <article id="content" class="content">
+          
+        </article>
+      </div>
+    </section>
+
+    <aside class="actions" aria-label="Controles do reino">
+      <div class="action action-floral action-top">
+        <a href=""><button
+          class="action-top-control"
+          id="top-pink-toggle"
+          type="button"
+          aria-label="Abrir elemento mágico"
+        >
+          <img class="action-frame" src="assets/action-frame-floral.png" alt="">
+          <img class="action-top-icon" src="assets/icone-rosa-roxo.png" alt="">
+        </button></a>
+      </div>
+
+      <!-- Controle de música: a moldura permanece decorativa e o botão fica no centro. -->
+<button class="action action-gold action-middle-one action-control music-control"
+              id="musicToggle" type="button" aria-label="Ligar música" aria-pressed="false">
+        <img class="action-frame" src="assets/action-frame-gold.png" alt="">
+        <span class="action-orb" aria-hidden="true">
+          <ion-icon class="action-symbol action-play" id="music-icon" name="play-outline"></ion-icon>
+        </span>
+      </button>
+<audio
+    id="backgroundMusic"
+    preload="auto"
+    loop
+>
+    <source src="https://www.image2url.com/r2/default/audio/1790815016923-156dfb0b-99f3-4674-b49c-c6cf03c54b34.mp3" type="audio/mpeg">
+</audio>
+
+      <!-- Controle lunar visual, preparado para receber uma função depois se desejado. -->
+<button class="action action-gold action-middle-two action-control moon-control"
+              id="moonToggle" type="button" aria-label="Modo lunar">
+        <img class="action-frame" src="assets/action-frame-gold.png" alt="">
+        <span class="action-orb" aria-hidden="true">
+          <ion-icon class="action-symbol action-moon" name="moon-outline"></ion-icon>
+        </span>
+      </button>
+</div>
+    </aside>
+  </main>
+
+  <footer>✨ A Magia Está de Volta ✨</footer>
+  <script src="js/app.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
